@@ -15,7 +15,7 @@ const Calendar = () => {
   useEffect(() => {
     setCalendar(buildCalendar(value));
   }, [value]);
-
+  console.log(value);
   const dayStyles = (day) => {
     if (!day.isSame(value, 'month')) return 'not-display';
     if (day.isBefore(new Date(), 'day')) return 'before-day';
