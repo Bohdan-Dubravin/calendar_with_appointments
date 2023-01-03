@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected {
+  @apply rounded-full bg-[#ff6633]
+   text-white absolute w-[40px] h-[40px] text-center 
+   -left-2 top-[-6px] leading-[40px];
+}
+
+.appointment {
+  @apply rounded-full bg-[#70C05B]
+  text-white absolute w-[40px] h-[40px] text-center 
+  -left-2 top-[-6px] leading-[40px];
+}
+
+.before-day {
+  @apply text-gray-300 pointer-events-none;
+}
+
+.not-display {
+  visibility: hidden;
+}
+
+.free-appointment {
+  @apply w-[148px] h-[40px] bg-[#70C05B] rounded-[4px] text-white;
+}
+
+.booked-appointment {
+  @apply w-[148px] h-[40px] bg-[#F3F2F1] text-[#606060] rounded-[4px]  pointer-events-none;
+}
